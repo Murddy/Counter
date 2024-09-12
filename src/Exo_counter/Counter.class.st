@@ -26,3 +26,19 @@ Counter >> count: anInteger [
 
 	count := anInteger 
 ]
+
+{ #category : 'operation' }
+Counter >> decrement [ 
+	count := count - 1
+]
+
+{ #category : 'operation' }
+Counter >> increment [ 
+	count := count + 1  
+]
+
+{ #category : 'initialization' }
+Counter >> initialize [
+"set the initial value of the value to 0"
+	count := 0
+]
